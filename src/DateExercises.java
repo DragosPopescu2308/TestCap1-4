@@ -6,6 +6,7 @@ public class DateExercises {
     public static void howMuchTime(LocalDate past){
         if (past.isAfter(LocalDate.now())){
             System.out.println("This date is in the future");
+            return;
         }
 
         LocalDate now = LocalDate.now();
