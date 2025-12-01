@@ -62,4 +62,19 @@ public class DateExercises {
         return "Days until birthday: " + days;
     }
 
+    public static String generateDates(LocalDate start, LocalDate end){
+        if (end.isBefore(start)){
+            return "Invalid range";
+        }
+        StringBuilder sb = new StringBuilder();
+
+        LocalDate currentDate = start;
+
+        while (!currentDate.isAfter(end)){
+            sb.append(currentDate).append("\n");
+            currentDate = currentDate.plusDays(1);
+        }
+        return sb.toString();
+    }
+
 }

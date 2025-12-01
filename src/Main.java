@@ -48,18 +48,25 @@ public class Main {
 //        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
 //        System.out.println(date.happyBirthday(birthDate));
 
+        LocalDate start = LocalDate.of(2021,12,3);
+        LocalDate end = LocalDate.of(2021,12,30);
+
+        System.out.println(DateExercises.generateDates(start, end));
+
+
                              // Time exercises
 
-        System.out.println("Enter the start time: ");
-        LocalTime start = LocalTime.now();
-        System.out.println(start);
-        System.out.println("Enter the end time! ");
-        System.out.println("Hour: ");
-        int eh =  sc.nextInt();
-        System.out.println("Minute: ");
-        int em =  sc.nextInt();
-        LocalTime end =  LocalTime.of(eh, em);
-        System.out.println(TimeExercises.timeCalculator(start, end));
+//        System.out.println("Enter the start time: ");
+//        LocalTime start = LocalTime.now();
+//        System.out.println(start);
+//        System.out.println("Enter the end time! ");
+//        System.out.println("Hour: ");
+//        int eh =  sc.nextInt();
+//        System.out.println("Minute: ");
+//        int em =  sc.nextInt();
+//        LocalTime end =  LocalTime.of(eh, em);
+//        System.out.println(TimeExercises.timeCalculator(start, end));
+
 
 
         }
