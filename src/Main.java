@@ -18,8 +18,21 @@ public class Main {
 //        System.out.printf("The formatted array1 is: "+ ArraysUtils.intToArray(arr1));
 //        System.out.println("\nThe formatted array2 is: "+ Arrays.toString(arr2));
 
-        LocalDate past =  LocalDate.of(2005,05,12);
+        LocalDate past =  LocalDate.of(2005,5,12);
         DateExercises.howMuchTime(past);
+        System.out.print("\n\n");
+        DateExercises d = new DateExercises();
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter past date: ");
+        System.out.print("\nYear: ");
+        int year = input.nextInt();
+        System.out.print("Month: ");
+        int month = input.nextInt();
+        System.out.print("Day: ");
+        int day = input.nextInt();
+        LocalDate date = LocalDate.of(year,month,day);
+
+        System.out.println(d.howMuchTime2(date));
 
         }
     }
