@@ -38,4 +38,28 @@ public class DateExercises {
 
     }
 
+    public String happyBirthday(LocalDate birthday){
+
+        LocalDate now = LocalDate.now();
+
+        if (birthday.isAfter(LocalDate.now())){
+            return "Invalid date";
+        }
+
+        LocalDate birthdayThisYear = LocalDate.of(now.getYear(), birthday.getMonthValue(), birthday.getDayOfMonth());
+
+        LocalDate nextBirthday;
+
+        if(birthdayThisYear.isEqual(now)){
+            return "Happy Birthday!";
+        } else if (birthdayThisYear.isAfter(now)) {
+            nextBirthday = birthdayThisYear;
+        }else{
+            nextBirthday = birthdayThisYear.plusYears(1);
+        }
+        long days = ChronoUnit.DAYS.between(now, nextBirthday);
+
+        return "Days until birthday: " + days;
+    }
+
 }
