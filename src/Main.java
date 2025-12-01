@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -47,11 +48,11 @@ public class Main {
 //
 //        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
 //        System.out.println(date.happyBirthday(birthDate));
-
-        LocalDate start = LocalDate.of(2021,12,3);
-        LocalDate end = LocalDate.of(2021,12,30);
-
-        System.out.println(DateExercises.generateDates(start, end));
+//
+//        LocalDate start = LocalDate.of(2021,12,3);
+//        LocalDate end = LocalDate.of(2021,12,30);
+//
+//        System.out.println(DateExercises.generateDates(start, end));
 
 
                              // Time exercises
@@ -66,6 +67,12 @@ public class Main {
 //        int em =  sc.nextInt();
 //        LocalTime end =  LocalTime.of(eh, em);
 //        System.out.println(TimeExercises.timeCalculator(start, end));
+
+                              //Date and Time
+
+        LocalDateTime startTime = LocalDateTime.of(2020,10,21,20,36);
+        LocalDateTime endTime = LocalDateTime.of(2022,12,11,10,34);
+        System.out.print(DateTimeExercises.getTimeBetween(startTime, endTime));
 
 
 
