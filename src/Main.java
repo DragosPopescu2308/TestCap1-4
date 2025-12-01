@@ -1,4 +1,5 @@
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -36,16 +37,30 @@ public class Main {
 //
 //        System.out.println(d.howMuchTime2(date));
 
-        DateExercises date = new DateExercises();
-        System.out.println("Insert your Birth Year: ");
-        int birthYear = sc.nextInt();
-        System.out.println("Insert your Birth Month: ");
-        int birthMonth = sc.nextInt();
-        System.out.println("Insert your Birth Day: ");
-        int birthDay = sc.nextInt();
+//        DateExercises date = new DateExercises();
+//        System.out.println("Insert your Birth Year: ");
+//        int birthYear = sc.nextInt();
+//        System.out.println("Insert your Birth Month: ");
+//        int birthMonth = sc.nextInt();
+//        System.out.println("Insert your Birth Day: ");
+//        int birthDay = sc.nextInt();
+//
+//        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
+//        System.out.println(date.happyBirthday(birthDate));
 
-        LocalDate birthDate = LocalDate.of(birthYear, birthMonth, birthDay);
-        System.out.println(date.happyBirthday(birthDate));
+                             // Time exercises
+
+        System.out.println("Enter the start time: ");
+        LocalTime start = LocalTime.now();
+        System.out.println(start);
+        System.out.println("Enter the end time! ");
+        System.out.println("Hour: ");
+        int eh =  sc.nextInt();
+        System.out.println("Minute: ");
+        int em =  sc.nextInt();
+        LocalTime end =  LocalTime.of(eh, em);
+        System.out.println(TimeExercises.timeCalculator(start, end));
+
 
         }
     }
